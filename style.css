@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.menu{
+    width: 800px;
+    margin: 5px auto;
+    background-color: royalblue;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 30px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    padding: 0 40px;
+    display: block;
+}
+/* di chuyển chuột vào sẽ lm gì đó thì dùng :hover */
+.menu ul li a:hover{
+    background-color: #fff;
+    color: springgreen;
+}
+/* Tạo menu cấp 2 */
+.menu2{
+    display: none;
+    position: absolute;
+}
+
+.menu ul li:hover .menu2{
+    display: block;
+    background-color: rgb(144, 144, 221);
+}
